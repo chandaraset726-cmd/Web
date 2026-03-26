@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hover Dropdown Menu</title>
+    <style>
+        /* Reset */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    /* Navbar */
+    .navbar {
+        background: #222;
+    }
+
+    .menu {
+        list-style: none;
+        display: flex;
+    }
+
+    .menu > li {
+        position: relative;
+    }
+
+    .menu > li > a {
+        display: block;
+        padding: 15px 20px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .menu > li > a:hover {
+        background: #444;
+    }
+
+    /* Dropdown */
+    .dropdown-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: #333;
+        list-style: none;
+        min-width: 160px;
+
+        display: none; /* hide by default */
+    }
+
+    .dropdown-menu li a {
+        display: block;
+        padding: 12px 15px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .dropdown-menu li a:hover {
+        background: #555;
+    }
+
+    /* Show dropdown on hover */
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+    </style>
+</head>
+<body>
+
+<nav class="navbar">
+    <ul class="menu">
+        <li><a href="#">Home</a></li>
+
+        <li class="dropdown">
+            <a href="#">Services</a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Web Design</a></li>
+                <li><a href="#">Development</a></li>
+                <li><a href="#">SEO</a></li>
+            </ul>
+        </li>
+
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+</body>
+</html>

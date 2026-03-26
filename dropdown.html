@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+        }
+        .dropdown {
+            font-size: 24px;
+            position: relative;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+        .dropdown:hover {
+            background-color: #e6e6e6;
+        }
+        .dropdown-list {
+            position: absolute;
+            top: 48px;
+            left: -50%;
+            display: none;
+            background-color: aliceblue;
+            padding: 20px;
+        }
+        .dropdown-list a {
+            display: block;
+            width: 300px;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: black;
+        }
+        .dropdown-list a:hover {
+            background-color: #e6e6e6;
+        }
+        .dropdown:hover .dropdown-list {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="dropdown">
+        <span>List</span>
+        <div class="dropdown-list">
+            <a href="">Home</a>
+            <a href="">Shop mall</a>
+        </div>
+    </div>
+</body>
+</html>

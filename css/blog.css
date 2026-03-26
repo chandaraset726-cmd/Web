@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(210, 234, 255);
+    font-family: "Siemreap", sans-serif;
+}
+
+.blog {
+    background-color: white;
+    padding: 40px;
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+}
+
+.blog img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: auto;
+    margin-top: auto;
+}
+
+iframe {
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.bluename {
+    color: aqua;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.redlink {
+    color: white;
+    padding: 4px;
+    background-color: rgb(229, 65, 65);
+    text-decoration: none;
+    width: 8px;
+    height: 4px;
+    margin: 3px;
+}
+.div2 {
+    background-color: rgb(41, 41, 41);
+
+}
+.div2 img{
+margin-left: 250px;
+height: 80px;
+}
+.div3 {
+    background-color: rgb(206, 45, 45);
+    height: 45px;
+    display: flex;
+    align-items: center;
+}
+.home {
+    color: white;
+    text-decoration: none;
+    margin-left: 250px;
+    margin-right: 20px;
+    font-family: "Koulen" , sans-serif;
+    size: 60px;
+    display: block;
+}
+.another {
+    color: rgb(230, 230, 230);
+    text-decoration: none;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: "Koulen" , sans-serif;
+    font-size: 20px;
+    display: block;
+}
+
+.another:hover {
+    color: white;
+
+}
